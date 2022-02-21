@@ -1,4 +1,4 @@
-# Resume Project Links
+# Tyler Lewis Resume Project Links
 
 ## [Email Terminal Client (Java)](https://github.com/tylew/email)
 * Prompt user for all required information by SMTP protocol

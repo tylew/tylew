@@ -3,7 +3,7 @@
 ## [Email Terminal Client (Java)](https://github.com/tylew/email)
 * Prompt user for all required information by SMTP protocol
 * Connect to external server and transmit email message
-* Utilizes Chapman.edu SMTP server
+* Utilizes Chapman.edu SMTP server (you wont be able to connect without specified network privileges)
 
 ## [CrypToadz NFT Database Project (SQL + Python)](https://github.com/tylew/CrypToad-Tkinter-)
 * SQL + python database interaction 

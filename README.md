@@ -2,6 +2,8 @@
 
 ## [EnergyChain - IEEE BCTE 2022](https://github.com/tylew/EnergyChain)
 
+## [Chapman DCI lab: self-made drone project](https://sites.google.com/chapman.edu/the-dci-lab/home/showcase#h.93iq8wiok6qo)
+
 ## [Email Terminal Client (Java)](https://github.com/tylew/email)
 * Gather SMTP protocol information
 * Connect to external server and transmit email message

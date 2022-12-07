@@ -1,9 +1,10 @@
 # Tyler Lewis Resume Project Links
 
+### [EnergyChain - IEEE BCTE 2022](https://github.com/tylew/EnergyChain)
+
 
 ### [100lewis.com](100lewis.com)
-
-### [EnergyChain - IEEE BCTE 2022](https://github.com/tylew/EnergyChain)
+* visual web programming
 
 ### [Chapman DCI lab: self-made drone project](https://sites.google.com/chapman.edu/the-dci-lab/home/showcase#h.93iq8wiok6qo)
 * (May need to scroll down about halfway)

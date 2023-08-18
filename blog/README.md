@@ -10,4 +10,4 @@ I have long had ideas about creating a master directory of personal written docu
 
 #### `Aug 17, 2023: `
 
-I am awaiting to start my Masters in Electrical Engineering and Computer Science degree at Chapman University. I have deferred the start of this program until January 2024 to accomodate an internship with Continental AG as a software engineer. 
+I have deferred the start my Masters in Electrical Engineering and Computer Science degree at Chapman University  until January 2024, in order to accomodate an internship with Continental AG as a software engineer. 

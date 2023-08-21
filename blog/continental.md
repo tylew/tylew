@@ -1,6 +1,8 @@
 # Continental AG Internship June-December, 2023
 
-My opportunity with Continental gave me the chance to work hands on with state-of-the-art, automotive-grade LiDAR modules. As a software-engineering intern, I was able to explore the intersection of hardware and software, working on multiple projects involving both aspects of the device.
+I have deferred the start of my EECS Masters commencement until January 2024. This is in order to accomodate my software engineering internship with Continental Automotive.
+
+This opportunity with Continental gave me hands on experience with state-of-the-art automotive-grade LiDAR modules. As a software engineering intern, I explored the intersection of hardware and software and worked on projects involving both of these aspects.
 
 ## About Continental
 Continental supplies everything from tires and other rubber products, to high-tech sensors that enable vehicle smart features. Their products can be found in a handful of European car manufacturers and their brand is most recognizes as a car-tire manufacturer.

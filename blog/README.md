@@ -7,4 +7,4 @@ Many people like to blog. I am a creative and curious mind and I would like to s
 I have long had ideas about creating a master directory of personal written documents. I would prefer to have a personalized website to display my entries, but am more interested in producing content than dumping a bunch of time into a custom front-end. Storing these records in a GitHub repository will be most suitable and I can eventually port these .md files over to a personalized website.
 
 ## Table of Contents
-- [Continental AG Internship](continental.md)
+- [Continental AG Internship](conti/continental.md)

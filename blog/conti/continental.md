@@ -1,13 +1,22 @@
 # Continental AG Internship June-December, 2023
 
-I have deferred the start of my EECS Masters commencement until January 2024. This is in order to accomodate my software engineering internship with Continental AG.
-
-Continentals Carpinteria office, where I worked, is dedicated to the research and development of automotive-grade LiDAR systems. This opportunity gave me hands on experience with state-of-the-art software and hardware development procedures. Despite being aquired as a software engineering intern, I was able to explore the intersection of both software and hardware, working on projects involving both aspects.
-
 ## About Continental
-Continental supplies everything from tires and other rubber products, to high-tech sensors that enable vehicle smart features. Their products are incorporated by a handful of car manufacturers, bit their brand is most recognized as a car tire manufacturer.
+Continental supplies everything from tires, to high-tech sensors that enable vehicle smart features. Their products are incorporated by a handful of car manufacturers. Their brand is most recognized as a car tire manufacturer.
 
-The concept of LiDAR is nearly a century old, but automotive-grade components must meet especially high standards, especially when needing to win bids from car manufacturers. Every car manufacturer will likely adopt enhanced driver-assist features in some if not all of their vehicles. These features will require some complexion of radar, LiDAR, and traditional cameras. Continental is positioning to be a competitor in this market by developing an automotive-specific solution for LiDAR to add to their suite of smart automotive sensors.
+Automotive-grade components must meet especially high standards, especially when needing to win bids from car manufacturers. Every car manufacturer will likely adopt enhanced driver-assist features in some if not all of their vehicles, and likely these features will find their way into required car standards. Advanced driver assist capabilities require a discreet complexion of radar, LiDAR, and traditional cameras. Continental is positioning to be a competitor in this market by developing an automotive-specific solution for LiDAR to add to their suite of smart automotive sensors.
+
+Continentals Carpinteria office is dedicated to the research and development of automotive-grade LiDAR systems. This opportunity gave me hands on experience within a state-of-the-art software and hardware development environment. As a software engineering intern I was assigned multiple roles:
+- Worked closely with the device bootloader, developing unit tests for low level functions
+- Developed scripts to programatically control a suite of lab devices
+- Built automated test sequence to isolate and test singular pixels on the LiDAR Rx photo array
+- Analyzed performance of individual pixels at different temperatures within a heat controlled chamber
+
+
+## Notes 
+
+`June 29, 2023` - I have deferred the start of my EECS Masters commencement until January 2024. This is in order to accomodate my software engineering internship with Continental AG.
+
+
 
 
 ## Projects

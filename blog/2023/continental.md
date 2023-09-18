@@ -18,5 +18,21 @@ Continentals Carpinteria office is dedicated to the research and development of 
 - **Temperature Analysis:** Conducted performance analyses of individual pixels at varying temperatures within a heat-controlled chamber.
 
 
+Master process
+- initiate gui and device control
+- Handle and provice IPC function
+
+GUI process
+- TKinter process
+- Handle recieving information from queue
+- Trigger callback functions in master process
+- Display figures loaded from child thread
+
+Device control process
+- Keep refrence to device control objects
+- TCP connection to oven
+- Serial connection to 2 attenuators
+- Serial connection to motor
+
 
 

@@ -9,7 +9,7 @@ A `network` is made up of at least two devices that connect and communicate via 
 
 `Interconnected network` refers to interconnected switches and forms 'the internet'
 
-## Web-dev breakpoints
+## Bootstrap breakpoints
 <table>
     <tr>
         <th>Breakpoint</th>

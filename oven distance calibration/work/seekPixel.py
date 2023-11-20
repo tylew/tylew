@@ -1,4 +1,4 @@
-from devices.ThorlabsBST import ThorlabsBST
+from devices.ThorlabsBST import *
 
 class SeekPixel:
     # Constants
@@ -15,6 +15,18 @@ class SeekPixel:
             raise ValueError("No BST serial set")
         
         SeekPixel.BENCHTOP_MOTOR = ThorlabsBST(SeekPixel.BST_SERIAL)
+
+    def findSerials(self) -> list[str]:
+        device_list = []
+
+        DeviceManagerCLI.BuildDeviceList()
+        device_list = list(DeviceManagerCLI.GetDeviceList())
+
+        if len(device_list) == 0:
+            raise Exception("No ThorLab devices found!")
+
+        return device_list
+    
 
     @staticmethod
     def seek(pixel: int):

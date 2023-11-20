@@ -68,5 +68,3 @@ class ThorlabsBST(ThorlabsKinesisMotor):
         self.channel.SetSettings(chan_settings, True, False)
 
     
-
-    

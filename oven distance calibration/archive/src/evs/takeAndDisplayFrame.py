@@ -1,3 +1,13 @@
+'''
+File: takeAndDisplayFrame.py
+Author: uig05389
+Desc: 
+    Take frame using HRL sensor and display figure visualization.
+    
+    Program assumes pre-initialization of HRL device along with EVS instalation.
+    Make sure ReadBinFile.py dependency is available.
+'''
+
 from ReadBinFile import *
 import os
 import subprocess
@@ -7,8 +17,7 @@ import time
 script_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Define the path to the batch file relative to the Python script
-rtool_getFrame_bat = os.path.join(script_directory, '..', '..', 'bat', 'Rtool_getFrame.bat')
-# rtool_setup_bat = os.path.join(script_directory, '..', '..', 'bat', 'Rtool_setup.bat')
+rtool_getFrame_bat = os.path.join(script_directory, '..', '..', 'bat', 'EVS_getFrame.bat')
 
 # Define EVS data save location
 data_dir = 'data\simtest_good1.bin'

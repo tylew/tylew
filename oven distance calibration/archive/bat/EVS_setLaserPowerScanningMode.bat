@@ -1,5 +1,5 @@
 @echo off
-
+set "HRLControlExe=exe\HrlControlCLI_1_0_9.exe"
 @REM Define power variable
 set power=%~1
 @REM Ensure parameter not empty
@@ -20,17 +20,17 @@ IF %laser_power% GTR 25 (
 )
 
 @REM Laser latch watchdog mechanism
-exe\HrlControlCLI.exe setGpio 192.168.1.12 0x3e 0x1 0x1
+%HRLControlExe% setGpio 192.168.1.12 0x3e 0x1 0x1
 Timeout 1
 @REM Laser enable
-exe\HrlControlCLI.exe setGpio 192.168.1.12 0x3f 0x1 0x1
+%HRLControlExe% setGpio 192.168.1.12 0x3f 0x1 0x1
 Timeout 1
 
 @REM set laser power
-exe\HrlControlCLI.exe setLaserPowerScanningMode 192.168.1.12 %laser_power%
+%HRLControlExe% setLaserPowerScanningMode 192.168.1.12 %laser_power%
 Timeout 2
 
-exe\HrlControlCLI.exe readLaserModuleRegister 192.168.1.12 0x39
+%HRLControlExe% readLaserModuleRegister 192.168.1.12 0x39
 @REM 0xc3 -> laser is in ok state (pup enabled, laser anabled, gpio set)
 
 echo Laser set.

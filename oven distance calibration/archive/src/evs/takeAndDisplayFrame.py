@@ -1,11 +1,11 @@
 '''
 File: takeAndDisplayFrame.py
 Author: uig05389
-Desc: 
-    Take frame using HRL sensor and display figure visualization.
+Description: 
+    Get frame using HRL sensor, display visualization of pixel array.
     
     Program assumes pre-initialization of HRL device along with EVS instalation.
-    Make sure ReadBinFile.py dependency is available.
+    ReadBinFile.py dependency must be available.
 '''
 
 from ReadBinFile import *

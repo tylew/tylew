@@ -1,6 +1,6 @@
 /*
  *
- * This is a C++ MEX-file for MATLAB.
+ * This is a C++ MEX-file providing functions for MATLAB.
  * Copyright 2017 The MathWorks, Inc.
  *
  */

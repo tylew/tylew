@@ -1,3 +1,12 @@
+'''
+File: TestbedVisualizer.py
+Author: uig05389
+Description: 
+    Provide foundation for testbed automation in regard to the oven distance calibration project.
+    This program assumes a pre-initialization of the LiDAR sensor: `bat/Rtool_init.bat` 
+
+    Running this file will loop the taking and displaying of HRL 'frames'
+'''
 import subprocess
 import os
 import time
@@ -8,25 +17,6 @@ import csv
 from evs import ReadBinFile
 from devices.device_controller import *
 
-'''
-What is gonna happen here? Lets determine:
-
-From a broad POV, this program will simply take an input for desired pixel, and consequently locate that pixel by rotating the sensor. 
-
-The program may need to run EVS getFrames multiple times.
-
-
-To determine where the pixel is currently pointed, we will attempt to locate the highest distance and intensity value
-
-Rotate from that column location towards the desired collumn
-
-- run getFrame
-- import and run generateData2D
-- Scan Data2D for largest value
-- Compare largest value to desired value
-- Rotate motor
-
-'''
 
 desired_col = 88
 csv_filename = "seek_pix_calibration.csv"
@@ -110,10 +100,11 @@ while stay_looping:
     # Store highest intensity & distance containing pixels
     d_max_index_2d, d_max_value, i_max_index_2d, i_max_value = ReadBinFile.get_illuminated_pixel(data2d_distance,data2d_intensity)
 
-    if (d_max_index_2d[1] == desired_col):
-        print("Located Pixel")
-        # stay_looping = False
-        # break
+    # Uncomment to end loop
+    # if (d_max_index_2d[1] == desired_col):
+    #     print("Located Pixel")
+    #     stay_looping = False
+    #     break
     
 
     prettyPrint(f'Difference between desired pix [{desired_col}]: {desired_col - d_max_index_2d[1]}')

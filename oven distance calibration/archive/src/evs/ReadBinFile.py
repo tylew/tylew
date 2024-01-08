@@ -1,3 +1,10 @@
+'''
+File: ReadBinFile.py
+Author: uig05389
+Description: 
+    Python script for decoding EVS binary output.
+'''
+
 import struct
 
 from mpl_toolkits.mplot3d import Axes3D

@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion enableextensions
 set "extension=.bin"
-set "baseName=testRtool_"
+set "baseName=output\testRtool_"
 set "HRLControlExe=exe\HrlControlCLI_1_0_9.exe"
 @ECHO generating ls shotlist
 %HRLControlExe% generateExtendedShotlistRToolLs 192.168.1.12 0 0 165 85 0 0 165 85

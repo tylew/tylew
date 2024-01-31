@@ -1,5 +1,5 @@
 @echo off
-
+set "HRLControlExe=exe\HrlControlCLI_1_0_9.exe"
 @REM Perform setup process
 @REM gain set elsewhere prior to getting frame
 
@@ -57,36 +57,36 @@ echo    [shotlist]: %shotlist_value%
 
 
 Rem turn off eye safety
-@REM exe\HrlControlCLI.exe writeAxiRegister 192.168.1.12 A00022B0 00000000 
+@REM %HRLControlExe% writeAxiRegister 192.168.1.12 A00022B0 00000000 
 
 rem set limit byte ? idk
 SET LimitByte=3.274.800
 Rem generate both shotlists, might as well do both
-exe\HrlControlCLI.exe generateExtendedShotlistRToolHs 192.168.1.12 0 0 165 85 0 0 165 85
-exe\HrlControlCLI.exe generateExtendedShotlistRToolLs 192.168.1.12 0 0 165 85 0 0 165 85
+%HRLControlExe% generateExtendedShotlistRToolHs 192.168.1.12 0 0 165 85 0 0 165 85
+%HRLControlExe% generateExtendedShotlistRToolLs 192.168.1.12 0 0 165 85 0 0 165 85
 
 Timeout 3
 
 Rem modify shotlist setting (based on speed)
-exe\HrlControlCLI.exe switchShotlist 192.168.1.12 %shotlist_value%
+%HRLControlExe% switchShotlist 192.168.1.12 %shotlist_value%
 Timeout 3
 
 
 Rem set gain thresholds, might as well do all
 @echo PPAR camera specific
-exe\HrlControlCLI.exe setThreshold 192.168.1.12 6000 LG_FF
-exe\HrlControlCLI.exe setThreshold 192.168.1.12 5750 LG_NF 
-exe\HrlControlCLI.exe setThreshold 192.168.1.12 5700 HG_FF 
-exe\HrlControlCLI.exe setThreshold 192.168.1.12 5850 HG_NF 
+%HRLControlExe% setThreshold 192.168.1.12 6000 LG_FF
+%HRLControlExe% setThreshold 192.168.1.12 5750 LG_NF 
+%HRLControlExe% setThreshold 192.168.1.12 5700 HG_FF 
+%HRLControlExe% setThreshold 192.168.1.12 5850 HG_NF 
 Timeout 1
 
 Rem activate correct FOV: WFOV 311; NFOV 317 (controlled by parameter)
 @echo setting the FOV Mux control
-exe\HrlControlCLI.exe writeAxiRegister 192.168.1.12 0xA0004100 %fov_value%
+%HRLControlExe% writeAxiRegister 192.168.1.12 0xA0004100 %fov_value%
 Timeout 3
 
 Rem set fiber delay ? idk
-exe\HrlControlCLI.exe writeAxiRegister 192.168.1.12 A0004048 06C11E03
+%HRLControlExe% writeAxiRegister 192.168.1.12 A0004048 06C11E03
 Timeout 1
 
 @ECHO EVS initialization complete.

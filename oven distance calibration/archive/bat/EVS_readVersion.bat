@@ -1,3 +1,4 @@
 @echo off
+set "HRLControlExe=exe\HrlControlCLI_1_0_9.exe"
 
-exe\HrlControlCLI.exe readEvsR5Version 192.168.1.12 
+%HRLControlExe% readEvsR5Version 192.168.1.12 

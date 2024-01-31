@@ -1,5 +1,5 @@
 '''
-File: takeAndDisplayFrame.py
+File: TakeAndDisplayFrame.py
 Author: uig05389
 Description: 
     Get frame using HRL sensor, display visualization of pixel array.

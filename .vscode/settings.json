@@ -1,0 +1,14 @@
+{
+    "cSpell.language": "en,en-US",
+    "cSpell.enableFiletypes": [
+        "!elixir",
+        "!erlang",
+        "dart",
+        "diff"
+    ],
+    "cSpell.words": [
+        "Backpropogation",
+        "jetstream",
+        "NN's"
+    ]
+}

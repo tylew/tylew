@@ -42,3 +42,6 @@ Backpropogation:
 3. Calculate error/loss
 4. Backward pass (backpropogation of error)
 5. Repeat 2-4 until converge/epochs
+
+# Feb 15
+

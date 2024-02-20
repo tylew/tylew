@@ -1,0 +1,7 @@
+
+
+1. Principal Component Analysis (PCA) is a statistical technique that reduces the dimensionality of a dataset while retaining as much variability (information) as possible. It achieves this not by selecting a subset of the original variables (features), but rather by creating new variables (principal components) that are linear combinations of the original variables. These principal components capture the most significant variance in the data with fewer dimensions. 
+
+2. Backpropagation is a critical algorithm in the learning process by allowing the network to update its weights and biases in a way that minimizes the error between the predicted output and the actual output. It provides a computationally efficient method for computing the gradient of the loss function with respect to each weight and bias in the network by applying the chain rule starting from the output layer and moving towards the input layer.
+ 
+3. Entropy is a measure of the uncertainty or unpredictability of a system. By having low entropy in leaf nodes in a decision tree, we create a model that is accurate, efficient, and interpretable. Low entropy ensures that the decisions made by the tree are based on clear, distinguishable patterns in the data, which aligns with the fundamental goal of decision tree learning to divide the dataset into well-defined and pure subsets based on the features.

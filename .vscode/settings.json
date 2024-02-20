@@ -3,6 +3,7 @@
     "cSpell.enableFiletypes": [
         "!elixir",
         "!erlang",
+        "!python",
         "dart",
         "diff"
     ],

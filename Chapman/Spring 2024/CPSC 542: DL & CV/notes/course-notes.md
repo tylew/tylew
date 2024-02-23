@@ -1,4 +1,10 @@
 
+TWIMLAI podcast
+'this week in ml & ai'
+
+For quiz 2:
+Explain-ability of transfer learning 
+
 
 - Temporal
 - Spacial
@@ -7,6 +13,13 @@ Limitations:
 - models aren't always 'plug-n-play'
 - models will form a bias around their training data
 
+## Auto Encoder
+Output should be as close as possible to input
+
+
+Check using 'reconstruction-error' -- some loss function
+
+U-Nets used for segmentation in 2D
 
 ### Vision
 - Sensors (eyes) gather information about surroundings

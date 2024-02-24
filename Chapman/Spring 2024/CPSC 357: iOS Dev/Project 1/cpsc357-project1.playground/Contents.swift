@@ -1,6 +1,7 @@
 import UIKit
+import Foundation
 
-func isPrime(number: Int) -> Bool
+func isPrime(_ number: Int) -> Bool
 {
     switch number {
         case 2, 3:
@@ -19,8 +20,19 @@ func isPrime(number: Int) -> Bool
     }
 }
 
-func gcd(numberA a: Int, numberB b: Int) -> Int
+func gcd(_ a: Int,_ b: Int) -> Int
 {
+    var a = a
+    var b = b
+    while b != 0 {
+        let temp = b
+        b = a % b
+        a = temp
+    }
+    return a
+}
+
+let gcdClosure: (Int, Int) -> Int = { a, b in
     var a = a
     var b = b
     while b != 0 {
@@ -63,8 +75,6 @@ func verifyParenthesis(expression: String) -> Bool {
     return count == 0
 }
 
-import Foundation
-
 func checkEmail(_ email: String) -> String {
     // Regular expression to match a basic email pattern
     let usernameRegex = "[A-Za-z0-9._]+"
@@ -100,8 +110,6 @@ func partialSum(array1 a1: [Int], array2 a2: [(Int,Int)]) -> [Int]
 
 func sumPower(numberA a: Int, numberB b: Int) -> Int
 {
-
-    // ex: 1^2+2^2+3^2+4^2+5^2
     var final: Int = 0
     for i in 1 ... b {
         let power = Int(pow(Double(i), Double(a))) // Correct exponentiation
@@ -112,10 +120,11 @@ func sumPower(numberA a: Int, numberB b: Int) -> Int
 
 // Tests
 // 1. Is my number prime?
-isPrime(number: 10) // false
-isPrime(number: 79) // true
+isPrime(10) // false
+isPrime(79) // true
 // 2. Greatest Common Divisor
-gcd(numberA: 15, numberB: 100) // 5
+gcd(15, 100) // 5
+gcdClosure(15, 100) // Use closure to represent function
 // 3. How much time should I wait?
 timeToWait(hr1: 2, min1: 15, hr2: 3, min2: 45) // "You should wait 1:30"
 // 4. Did I have my parenthesis correctly?
@@ -125,9 +134,9 @@ verifyParenthesis(expression: ")(") // false
 // 5. Is my email correct?
 checkEmail("tylewis@chapman.edu") // "Thanks for the email tylewis"
 checkEmail("hipjasif@gmail.com") // "Thanks for the email hipjasif"
-checkEmail("thisisnot an email") // "Provide a valid email"
+checkEmail("thisis.not@an-email") // "Provide a valid email"
 checkEmail("cibrien.edu") // "Provide a valid email"
 // 7. Partial Sum
 partialSum(array1: [3,6,4,15,30], array2:[(1,3),(0,4)]) // Array of 2 Int elements
 // 8. Sum of powers
-sumPower(numberA: 2, numberB: 5) // 55
+sumPower(numberA: 2, numberB: 5) // 1^2+2^2+3^2+4^2+5^2 = 55

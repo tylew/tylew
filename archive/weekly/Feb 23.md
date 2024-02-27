@@ -6,15 +6,25 @@ School is starting to ramp up, now is the time to double down and ensure you are
 
 There are a handful of things assigned from each class, lets run through them:
 
-- ENGR 520: Technical writing
+ENGR 520: Technical writing
+- `nil`
 
-- EENG 511: Control Systems
+EENG 511: Control Systems
+- Circuit analysis worksheet
+  
+EENG 389: RF Systems
+- `nil`
+  
+CPSC 357: iOS development
+- Design characteristic lightening presentatiion 
+- Project 1 Report
 
-- EENG 389: RF Systems
+CPSC 542: Deep learning and computer vision
+- Project 1 Report
+- Reading
+- Understanding of CNN
+- Transfer learning review
+- Transformer architecture
 
-- CPSC 357: iOS development
-
-- CPSC 542: Deep learning and computer vision
-
-- ENGR 501: Ethics
-
+ENGR 501: Ethics
+- `nil`

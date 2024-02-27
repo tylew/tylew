@@ -13,6 +13,9 @@ Limitations:
 - models aren't always 'plug-n-play'
 - models will form a bias around their training data
 
+
+Attention is all you need introduced the transformer, an encoder/decoder architecture. 
+
 ## Auto Encoder
 Output should be as close as possible to input
 

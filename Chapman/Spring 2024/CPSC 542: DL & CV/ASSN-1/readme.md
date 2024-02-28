@@ -7,11 +7,11 @@
 - **Date:** 02/27/24
 
 ## Project Overview
-[(Link to containing repo)](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-1)
+[(containing repo)](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-1)
 This project involves the implementation of a Convolutional Neural Network (CNN) for the purpose of classifying images from the handwritten character datasets. This assignment is part of the coursework for CPSC 542 at Chapman University, focusing on leveraging deep learning for vision-based classification tasks.
 
 ## Sources
-- [Kuzushiji-49 & KMNIST Datasets](https://github.com/rois-codh/kmnist#The%20Dataset)
+- [**[DATASET REPO]** Kuzushiji-49 & KMNIST Datasets](https://github.com/rois-codh/kmnist#The%20Dataset)
 - [Guide to Lenet Architecture ](https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide)
 - [Building a CNN pipeline in python](https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/)
 
@@ -19,6 +19,7 @@ This project involves the implementation of a Convolutional Neural Network (CNN)
 
 ## Methods
 ### Preprocessing
+- Data should be relatively normalized. For all tests this model has undergone, characters are isolated in a separate process prior to classification.
 - A dataset split is applied, allocating 75% of the images for training and 25% for validation. This approach is intended to gauge the model's  capability on unseen data.
 
 ### Model Architecture

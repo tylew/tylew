@@ -1,4 +1,4 @@
-# CPSC 542: Convolutional Neural Network Implementation - Assignment #1
+# [Convolutional Neural Network Implementation](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-1)
 
 ## Author Information
 - **Name:** Lewis, T.
@@ -7,25 +7,18 @@
 - **Date:** 02/27/24
 
 ## Project Overview
-This project involves the implementation of a Convolutional Neural Network (CNN) for the purpose of classifying images from the MNIST dataset. The MNIST dataset comprises 70,000 greyscale images of handwritten digits (0 through 9), each of 28x28 pixels resolution. This assignment is part of the coursework for CPSC 542 at Chapman University, focusing on leveraging deep learning for vision-based classification tasks.
+[(Link to containing repo)](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-1)
+This project involves the implementation of a Convolutional Neural Network (CNN) for the purpose of classifying images from the handwritten character datasets. This assignment is part of the coursework for CPSC 542 at Chapman University, focusing on leveraging deep learning for vision-based classification tasks.
 
-## Background
-Prior to this assignment, my experience with computer vision tasks primarily involved using the Euclidean Distance K-nearest neighbors algorithm to predict labels for the MNIST dataset. However, this approach yielded a maximum accuracy of approximately 0.9. The objective of this assignment is to demonstrate the superiority of CNNs over simpler algorithms for image classification tasks, particularly in recognizing patterns in handwritten numeric characters.
+## Sources
+- [Kuzushiji-49 & KMNIST Datasets](https://github.com/rois-codh/kmnist#The%20Dataset)
+- [Guide to Lenet Architecture ](https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide)
+- [Building a CNN pipeline in python](https://pyimagesearch.com/2021/07/19/pytorch-training-your-first-convolutional-neural-network-cnn/)
 
-## Project Goals
-1. **Prove the Necessity for Deep Learning:** To illustrate why deep learning, and CNNs in particular, are more suited for the classification of the MNIST dataset than traditional machine learning methods.
-2. **Improve Classification Accuracy:** To significantly enhance the accuracy of pattern recognition in handwritten digits by employing a CNN model.
-3. **Application Potential:** Highlight the potential application of such a model in transcribing scanned documents, aiding in the digitization of historical texts.
 
-## Dataset
-The MNIST dataset is utilized for this project. It features:
-- 70,000 greyscale images.
-- 28x28 pixel resolution per image.
-- Handwritten numeric characters (0-9).
-  
+
 ## Methods
 ### Preprocessing
-- The MNIST dataset images are transformed to tensor format to facilitate processing by PyTorch.
 - A dataset split is applied, allocating 75% of the images for training and 25% for validation. This approach is intended to gauge the model's  capability on unseen data.
 
 ### Model Architecture
@@ -40,8 +33,39 @@ The MNIST dataset is utilized for this project. It features:
 - **Evaluation:** Upon completion of training, the model is assessed on a separate test dataset, and a classification report is generated. This report details the model's precision, recall, and F1-scores for each digit class, offering a comprehensive evaluation of its classification efficacy.
 - **Performance Monitoring:** A history of training and validation loss and accuracy is maintained throughout the training epochs, serving as a metric for evaluating the model's performance.
 
-### Evaluation on the Test Set
-The evaluation results are as follows:
+
+### Evaluation on the Kuzushiji-49 Test Set
+- **Accuracy:** The model achieved an overall accuracy of 99% on the test set, indicating a high level of proficiency in classifying handwritten digits from the MNIST dataset.
+
+- **Precision, Recall, and F1-Score by Class:**
+```
+               precision    recall  f1-score   support
+
+     Class 0       0.93      0.94      0.94      1000
+     Class 1       0.97      0.94      0.96      1000
+     Class 2       0.94      0.95      0.95      1000
+     Class 3       0.83      0.90      0.86       126
+     Class 4       0.94      0.91      0.93      1000
+     Class 5       0.89      0.88      0.88      1000
+     Class 6       0.94      0.90      0.92      1000
+     Class 7       0.86      0.93      0.90      1000
+     Class 8       0.82      0.93      0.87       767
+     Class 9       0.95      0.90      0.93      1000
+    Class 10       0.93      0.95      0.94      1000
+    Class 11       0.95      0.90      0.93      1000
+    Class 12       0.91      0.89      0.90      1000
+    ...
+
+    accuracy                           0.92     38547
+   macro avg       0.92      0.91      0.91     38547
+weighted avg       0.92      0.92      0.92     38547
+
+```
+#### Plots/Figures
+![alt text](images/kmnist-49-visualization.png)
+- A graphical representation showcases the trend in training and validation loss and accuracy across epochs. This visualization aids in identifying any signs of overfitting or underfitting and in understanding how the model's performance evolves with training.
+  
+### Evaluation on the KMNIST Test Set
 
 - **Accuracy:** The model achieved an overall accuracy of 99% on the test set, indicating a high level of proficiency in classifying handwritten digits from the MNIST dataset.
 
@@ -57,9 +81,12 @@ The evaluation results are as follows:
   - **8 - Eight:** Precision: 0.98, Recall: 0.98, F1-Score: 0.98
   - **9 - Nine:** Precision: 0.99, Recall: 0.96, F1-Score: 0.98
 
-### Plots/Figures
-![!\[Alt text\](mnist_examples.png)](visualization.png)
-- A graphical representation showcases the trend in training and validation loss and accuracy across epochs. This visualization aids in identifying any signs of overfitting or underfitting and in understanding how the model's performance evolves with training.
+#### Plots/Figures
+![alt text](images/visualization.png)
+
+
 ## How to Run the Code
-Instructions for setting up the environment, installing dependencies, and running the code for replication and further experimentation will be provided here.
+run all cells in Jupyter notebook `model.ipynb`
+
+ensure `helper1.py` is available along with all other necessary imports.
 

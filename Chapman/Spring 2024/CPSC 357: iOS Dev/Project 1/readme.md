@@ -1,14 +1,15 @@
-# CPSC 357: Project 1/2
+# [CPSC 357: Project 1-2](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20357%3A%20iOS%20Dev/Project%201)
+
+
+
+This Swift playground includes a variety of functions to demonstrate different programming concepts. I relatively had fun completing this assignment and ended up doing doing 7/8 responses. I have an understanding of this material and look forward to using swift for building an app.
 
 ## Author Information
 - **Name:** Lewis, T.
 - **Email:** tylewis@chapman.edu
 - **Date:** 02/29/24
 
----
 
-
-This Swift playground includes a variety of functions to demonstrate different programming concepts. I relatively had fun completing this assignment and ended up doing doing 7/8 responses. I have an understanding of this material and look forward to using swift for building an app.
 
 ## Functions Implemented
 - **Standard Functions**: `isPrime`, `gcd`, `timeToWait`, `verifyParenthesis`, `checkEmail`, `partialSum`, `sumPower`.

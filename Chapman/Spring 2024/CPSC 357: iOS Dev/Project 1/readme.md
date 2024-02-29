@@ -12,7 +12,7 @@ This Swift playground includes a variety of functions to demonstrate different p
 
 
 ## Functions Implemented
-- **Standard Functions**: `isPrime`, `gcd`, `timeToWait`, `verifyParenthesis`, `checkEmail`, `partialSum`, `sumPower`.
+- **Standard Functions**: `isPrime`, `gcd`, `waitingTime`, `verifyParenthesis`, `checkEmail`, `partialSum`, `sumPower`.
 - **Closure**: `gcdClosure` is a closure representing a function to calculate the GCD.
 
 
@@ -44,7 +44,7 @@ This Swift playground includes a variety of functions to demonstrate different p
 - **Parameters**: `a`, `b` - integers to find the GCD of.
 - **Logic**: Mirrors the `gcd` function using closure syntax.
 
-### `timeToWait(hr1: Int, min1: Int, hr2: Int, min2: Int) -> String`
+### `waitingTime(hr1: Int, min1: Int, hr2: Int, min2: Int) -> String`
 - **Purpose**: Calculates the waiting time between two moments.
 - **Parameters**: `hr1`, `min1` - the start time; `hr2`, `min2` - the end time.
 - **Logic**: Converts times to minutes, finds the difference, and formats the result as a string.

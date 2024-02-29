@@ -43,7 +43,7 @@ let gcdClosure: (Int, Int) -> Int = { a, b in
     return a
 }
 
-func timeToWait(hr1: Int, min1: Int, hr2: Int, min2: Int) -> String
+func waitingTime(firstHour hr1: Int, firstMinute min1: Int, secondHour hr2: Int, secondMinute min2: Int) -> String
 {
     let temp1 = hr1 * 60 + min1
     let temp2 = hr2 * 60 + min2
@@ -126,7 +126,7 @@ isPrime(79) // true
 gcd(15, 100) // 5
 gcdClosure(15, 100) // Use closure to represent function
 // 3. How much time should I wait?
-timeToWait(hr1: 2, min1: 15, hr2: 3, min2: 45) // "You should wait 1:30"
+waitingTime(firstHour: 2, firstMinute: 15, secondHour: 3, secondMinute: 45) // "You should wait 1:30"
 // 4. Did I have my parenthesis correctly?
 verifyParenthesis(expression: "()()") // true
 verifyParenthesis(expression: "(()))") // false

@@ -1,3 +1,7 @@
+<script
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  type="text/javascript">
+</script>
 
 TWIMLAI podcast
 'this week in ml & ai'
@@ -46,7 +50,7 @@ For next week review:
 - Back prop
 - Convocational NN intro slides
 
----
+#
 
 Convolution layer 
 Cross-Correlation
@@ -59,5 +63,24 @@ Backpropogation:
 4. Backward pass (backpropogation of error)
 5. Repeat 2-4 until converge/epochs
 
-# Feb 15
+# Mar 7
+
+IOU
+-> Overlap area/Total area 
+$$\frac{TP}{TP + FP + FN}$$
+
+Softmax -> proxy for certainty 
+
+Q: why might want to propogate certainty forward?
+
+A: Make sure using high-certainty information to make decisions.
+
+A2: low-certainty will also indicate changes must be made to model. 
+
+## 
+aleatoric - data/measurement related
+
+epistemic - model related
+
+Does the performance of my model match the certainty it is returning?
 

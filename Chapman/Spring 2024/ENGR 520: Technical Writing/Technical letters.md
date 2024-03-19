@@ -69,3 +69,19 @@ Less formal
 
 Signature
 - four single spaces, room for signature, between closing salutation and typed name
+
+
+### Types of business letters
+- cover letter
+- letter of rec
+- interview followup
+- sales letter
+- offer letter
+- letter of commendation
+- letter of resignation
+- thank you letters
+- apology letters
+- welcome 
+- announcement letter
+- termination
+- office memorandum

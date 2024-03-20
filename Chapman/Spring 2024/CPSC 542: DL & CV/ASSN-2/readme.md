@@ -1,4 +1,4 @@
-# [Semantic Segmentation using CNN Implementation](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-1)
+# [Semantic Segmentation using CNN Implementation](https://github.com/tylew/tylew/tree/main/Chapman/Spring%202024/CPSC%20542%3A%20DL%20%26%20CV/ASSN-2)
 
 ## Author Information
 - **Name:** Lewis, T.

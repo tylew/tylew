@@ -1,7 +1,12 @@
 import os
 import numpy as np
 import torch
+<<<<<<< Updated upstream
 from torch.utils.data import Dataset
+=======
+from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms
+>>>>>>> Stashed changes
 from PIL import Image
 import requests
 

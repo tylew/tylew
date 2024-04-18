@@ -1,51 +1,12 @@
-<<<<<<< Updated upstream
-=======
-# import torch
-# from torchvision import datasets, transforms
-
-# class CIFAR10:
-#     def __init__(self, data_dir, train=True, transform=None):
-#         self.classes = [f'Class {i}' for i in range(10)]
-
-#         # Use the provided transform or default to ToTensor()
-#         if transform is None:
-#             self.transform = transforms.ToTensor()
-#         else:
-#             self.transform = transform
-
-#         # Load the dataset
-#         self.imagesset = self.load_data(data_dir, train)
-
-#     def load_data(self, dir, train):
-#         # Use the transform assigned in __init__
-#         dataset = datasets.CIFAR10(root=dir, train=train, download=True, transform=self.transform)
-#         return dataset
-'''
-# Usage example
-data_dir = './data'
-transform = transforms.Compose([
-    transforms.ToTensor(),
-    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
-])
-
-cifar10_loader = CIFAR10(data_dir=data_dir, train=True, transform=transform)
-'''
->>>>>>> Stashed changes
 import pickle
 import os
 from os.path import join, exists
 import numpy as np
 import torch
-<<<<<<< Updated upstream
-from torch.utils.data import Dataset
-from torchvision import datasets
-from PIL import Image
-=======
 from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
 from PIL import Image
 import requests
->>>>>>> Stashed changes
 
 class CIFAR10Dataset(Dataset):
 
@@ -104,10 +65,6 @@ class CIFAR10Dataset(Dataset):
         images = np.concatenate(images, 0)
         images = np.transpose(images, (0,2,3,1)).astype(np.float32)
         images /= 255.0  # Normalize to [0, 1]
-<<<<<<< Updated upstream
-        
-=======
->>>>>>> Stashed changes
         return images,labels
 
     def __len__(self):

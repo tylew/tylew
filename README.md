@@ -15,7 +15,7 @@
 ### [100lewis.com](https://100lewis.com)
 * visual web programming
 
-### [Chapman DCI lab: self-made drone project]([https://sites.google.com/chapman.edu/the-dci-lab/home/showcase#h.93iq8wiok6qo](https://sites.google.com/chapman.edu/the-dci-lab/home/showcase?pli=1#h.93iq8wiok6qo))
+### [Chapman DCI lab: self-made drone project](https://sites.google.com/chapman.edu/the-dci-lab/home/showcase/fall-21-fall-22-showcase-projects?authuser=0#h.qgbxlkmhvkhi)
 * (May need to scroll down about halfway)
 * Fabricated in PLA material
 * Finalized using MarkForged X7 3D printer allowing use of continuous carbon fiber fillament 

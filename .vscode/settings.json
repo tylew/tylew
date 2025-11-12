@@ -1,0 +1,17 @@
+{
+    "cSpell.language": "en,en-US",
+    "cSpell.enableFiletypes": [
+        "!elixir",
+        "!erlang",
+        "!python",
+        "dart",
+        "diff"
+    ],
+    "cSpell.words": [
+        "Backpropogation",
+        "Gerson",
+        "jetstream",
+        "NN's",
+        "SVMs"
+    ]
+}

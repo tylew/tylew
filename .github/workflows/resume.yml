@@ -1,0 +1,60 @@
+name: Release Resume
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "resume/resume.source.tex"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set environment variables
+        run: |
+          echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
+          echo "MONTH=$(date +%m)" >> $GITHUB_ENV
+          echo "FILENAME=TylerLewis_resume-${{ env.YEAR }}" >> $GITHUB_ENV
+
+      - name: Compile resume PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume/resume.source.tex
+          args: >
+            -interaction=nonstopmode
+            -halt-on-error
+            -jobname=${{ env.FILENAME }}
+            -output-directory=resume
+          latexmk_use_xelatex: true
+
+      - name: Verify PDF produced
+        run: ls -l resume/${{ env.FILENAME }}.pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.FILENAME }}.pdf
+          path: resume/${{ env.FILENAME }}.pdf
+          if-no-files-found: error
+
+      - name: Set release tag and name
+        run: |
+          echo "TAG=${{ env.FILENAME }}-${{ env.MONTH }}" >> $GITHUB_ENV
+          echo "NAME=Resume ${date -u +'%Y-%m-%d'}" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.TAG }}
+          name: ${{ env.NAME }}
+          body: |
+            Automated resume release from main.
+          files: resume/${{ env.FILENAME }}.pdf
+          fail_on_unmatched_files: true

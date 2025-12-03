@@ -45,7 +45,7 @@ jobs:
       - name: Set release tag and name
         run: |
           echo "TAG=${{ env.FILENAME }}-${{ env.MONTH }}" >> $GITHUB_ENV
-          echo "NAME=Resume ${date -u +'%Y-%m-%d'}" >> $GITHUB_ENV
+          echo "NAME=Resume $(date -u +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

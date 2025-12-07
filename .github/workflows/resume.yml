@@ -20,9 +20,11 @@ jobs:
         run: |
           YEAR=$(date +%Y)
           MONTH=$(date +%m)
+          DAY=$(date +%d)
           FILENAME="TylerLewis_resume-${YEAR}"
           echo "YEAR=${YEAR}" >> $GITHUB_ENV
           echo "MONTH=${MONTH}" >> $GITHUB_ENV
+          echo "DAY=${DAY}" >> $GITHUB_ENV
           echo "FILENAME=${FILENAME}" >> $GITHUB_ENV
 
       - name: Compile resume PDF
@@ -33,21 +35,24 @@ jobs:
             -interaction=nonstopmode
             -halt-on-error
             -jobname=${{ env.FILENAME }}
-            -output-directory=resume
+            -output-directory=.
           latexmk_use_xelatex: true
 
       - name: Verify PDF produced
-        run: ls -l resume/${{ env.FILENAME }}.pdf
+        run: ls -l ${{ env.FILENAME }}.pdf
+
+      - name: Create alias with consistent name
+        run: cp ${{ env.FILENAME }}.pdf TylerLewis_resume-latest.pdf
 
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ env.FILENAME }}.pdf
-          path: resume/${{ env.FILENAME }}.pdf
+          path: ${{ env.FILENAME }}.pdf
           if-no-files-found: error
 
       - name: Set release tag and name
         run: |
-          echo "TAG=${{ env.FILENAME }}-${{ env.MONTH }}" >> $GITHUB_ENV
+          echo "TAG=resume-${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}" >> $GITHUB_ENV
           echo "NAME=Resume $(date -u +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Create GitHub Release
@@ -59,5 +64,7 @@ jobs:
           name: ${{ env.NAME }}
           body: |
             Automated resume release from main.
-          files: resume/${{ env.FILENAME }}.pdf
+          files: |
+            ${{ env.FILENAME }}.pdf
+            TylerLewis_resume-latest.pdf
           fail_on_unmatched_files: true

@@ -24,7 +24,7 @@
 *.ist
 
 # PDF build byproducts (only ignore if auto-generated)
-*.pdf
+resume/*.pdf
 
 # LaTeXmk / latexmkrc temp
 latexmkrc

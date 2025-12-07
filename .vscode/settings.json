@@ -1,17 +1,33 @@
 {
-    "cSpell.language": "en,en-US",
-    "cSpell.enableFiletypes": [
-        "!elixir",
-        "!erlang",
-        "!python",
-        "dart",
-        "diff"
-    ],
-    "cSpell.words": [
-        "Backpropogation",
-        "Gerson",
-        "jetstream",
-        "NN's",
-        "SVMs"
-    ]
+  "latex-workshop.latex.tools": [
+    {
+      "name": "docker-pdflatex",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-v",
+        "%DIR%:/work",
+        "tex-build",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-synctex=1",
+        "-output-directory=/work",
+        "%DOCFILE%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Docker pdflatex",
+      "tools": [
+        "docker-pdflatex"
+      ]
+    }
+  ],
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true
 }

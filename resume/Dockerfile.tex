@@ -1,0 +1,5 @@
+FROM texlive/texlive:latest
+WORKDIR /work
+RUN tlmgr update --self && \
+    tlmgr install latex-bin xetex fontspec collection-fontsrecommended
+ENTRYPOINT ["pdflatex"]

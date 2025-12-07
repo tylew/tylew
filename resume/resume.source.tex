@@ -13,135 +13,174 @@
 \setstretch{1}
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
+\setlength{\belowcaptionskip}{0pt}
 \titleformat{\section}{\large\bfseries}{}{0em}{}
-\titlespacing*{\section}{0pt}{10pt}{4pt}
+\titlespacing*{\section}{0pt}{0pt}{4pt}
 \titleformat{\subsection}{\bfseries}{}{0em}{}
 \titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt}
 
 \begin{document}
 
 \begin{center}
 \textbf{\Large Tyler Lewis}\\[4pt]
-\href{mailto:tylerlewissb@gmail.com}{tylerlewissb@gmail.com} • \href{https://linkedin.com/in/tylew/}{linkedin.com/in/tylew/}\\[8pt]
-Engineer with experience in leading production software development and bridging technical and business domains. Skilled at translating complex goals into practical and effective solutions. Seeking a full-time position in a collaborative environment where my skills have the opportunity to drive meaningful impact.
-
-% Engineer with experience in production software development and a strong grasp of how technical systems serve business strategy. Skilled at translating complex goals into practical, scalable, and effective solutions across both engineering and operational domains.
-\end{center}
+\href{mailto:tylerlewissb@gmail.com}{tylerlewissb@gmail.com} • \href{https://linkedin.com/in/tylew/}{linkedin.com/in/tylew/}\\[3pt]
+% Early career engineer with broad and deep experience in production software development. Skilled at translating business goals into effective technical solutions. Seeking a full-time position in a collaborative environment where my skills have the opportunity to drive meaningful impact.
+Full-stack and cloud infrastructure engineer with direct experience in ownership of end-to-end production systems serving real operational use. Proven ability to deliver quickly and expand scope while maintaining a high standard of execution. Seeking a full-time position in a collaborative environment.
+\end{center}\vspace{-\baselineskip}
 
 \noindent\rule{\textwidth}{0.4pt}
 
 % \vspace{4pt}
 \section*{EDUCATION}
 \textbf{Chapman University} – Orange, CA, USA\\
-M.S. Electrical Engineering and Computer Science (in progress) \hfill Dec 2025\\
+M.S. Electrical Engineering and Computer Science \hfill Dec 2025\\
 B.S. Computer Science \hfill May 2024\\
-Minor: Business Administration
+  \textit{Minor Business Administration}
 
 \noindent\rule{\textwidth}{0.4pt}
 
-\section*{SKILLS}
-% \vspace{-1em}
-\begin{multicols}{3}
-    \begin{itemize}[leftmargin=*]
-      \item Python
-      \item C/C++
-      \item Infrastructure as Code
-      \item Go
-      \item Javascript + React
-      \item Containerization
-      \item SQL
-    %   \item Node.js
-      \item Cloud Services
-      \item Communication \& Leadership
-    \end{itemize}
-\end{multicols}
+% \section*{SKILLS}
+% \begin{multicols}{3}
+%   \begin{itemize}[leftmargin=*]
+%   \setlength{\itemsep}{0pt}
+%   \setlength{\parskip}{0pt}
+%   \setlength{\parsep}{0pt}
+%     \item Python / Golang / TypeScript
+%     \item Database Management
+%     \item Next.js
+%     % \item Infrastructure as Code
+%     % \item Containerization
+%     % \item Identity and Access Management
+%   \end{itemize}
+%   \end{multicols}
 
+% \noindent\rule{\textwidth}{0.4pt}
+
+\section*{SKILLS}
+\begin{multicols}{3}
+  \begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item Python/Go/TypeScript/C/++
+    \item Infrastructure as Code \\ (Terraform)
+    \item Containerized microservices
+    \item Distributed systems \\and async messaging
+    \item SQL / NoSQL data modeling
+    \item Observability: \\metrics, logs, alerting
+  \end{itemize}
+\end{multicols}
 \noindent\rule{\textwidth}{0.4pt}
 
 
 \section*{PROFESSIONAL EXPERIENCE}
 \textbf{Hansji Hospitality Ventures} – Irvine, CA\\
-\textit{Lead Full-Stack Engineer} \hfill May 2024 – Present
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
-\item Serve as senior engineer and technical liaison translating Hansji’s vision for an integrated hotel operations and revenue intelligence platform into a scalable, production-ready technical solution.
-\item Architect and maintain performant backend and user-facing infrastructure using modern full-stack patterns: publisher/subscriber messaging, microservices, relational + document databases, React, and automated CI/CD.
-\item Ensure data quality, real-time ingestion, analytical performance, and application security at every layer.
-\item Define and enforce engineering standards, ensuring maintainable codebases and predictable deployments.
-\item Produce architectural diagrams and documentation to communicate system design and guide expansion.
+\textit{Lead Software Engineer} \hfill May 2024 – Present
+\begin{itemize}[leftmargin=1.5em]
+\item Own design, provisioning, and lifecycle management of all cloud infrastructure (Terraform IaC, IAM roles/groups, security policies) on Google Cloud Platform for a management platform across 6 hotels with ~\$30M ARR.
+\item Architect distributed backend systems in Python (FastAPI) and Go using asynchronous task queues, Pub/Sub, and event-driven microservices with data-governance guarantees.
+\item Implement dual-layer access control: cloud-resource authorization and internal permission engine enforcing role and scope-based checks on both client and server across all systems and resources.
+\item Deliver observability across services (logging, metrics, alerting) enabling rapid fault isolation.
+\item Build secure SSR-first Next.js interfaces with clear UX flows and minimal client-side attack surface.
+\item Integrate legacy XML APIs with modern data pipelines (Apache Beam $\rightarrow$ SQL + Document DBs) for real-time revenue, labor, and organizational intelligence.
+\item Produce comprehensive documentation of system design and developer workflows.
 \end{itemize}
+
+% \vspace{-0.3em}
+\textit{Selected Systems Overview}
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{Revenue Management}: Real-time On-the-Books (OTB) data ingest; pricing and demand insights; ML-based recommendation engine; vector-search event correlation; executive revenue forecasting.
+\item \textbf{Labor Oversight}: Overtime anomaly detection; occupancy-driven staffing alerts.
+\item \textbf{Credit Card Reconciliation}: Direct bank account integration with Plaid; employee receipt capture workflows; accounting exports and discrepancy resolution.
+\item \textbf{Notification Suite}: Configurable email/Slack/SMS delivery; automated operational reporting.
+\item \textbf{Identity \& Access Management}: Full-stack authorization framework backing all products.
+\end{itemize}
+
+\vspace{0.3em}
 
 \textbf{Clean Coalition} – Santa Barbara, CA\\
-\textit{Microgrid Design \& Analytics Engineer} \hfill Jan 2024 – Oct 2024
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
-\item Engineered a simulation and analytics platform for the Solar Microgrid Methodology, supporting renewable and microgrid project development.
-\item Built models for electrical flow, energy storage, and time-of-use to analyze grid-resilient design.
-\item Deployed a managed platform standardizing technical evaluation and documentation workflows.
-\item Supervised and mentored a junior developer, ensuring maintainable, high-quality code delivery.
+\textit{Backend and Algorithm Engineer (Remote)} \hfill Jan 2024 – Aug 2024
+\begin{itemize}[leftmargin=1.5em]
+\item Developed a cloud-based platform standardizing microgrid evaluation and proposal workflows.
+\item Engineered data models and simulations for electrical flow, energy storage, and time-of-use analysis to support microgrid project proposals and development.
+\item Supervised and mentored a junior developer; ensured maintainable and quality code.
 \end{itemize}
 
+\vspace{0.3em}
+
 \textbf{Continental Automotive} – Carpinteria, CA\\
-\textit{LiDAR Software Engineering Intern} \hfill May 2023 – Jan 2024
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
+\textit{LiDAR Software Engineering Intern} \hfill May 2023 – Dec 2024
+\begin{itemize}[leftmargin=1.5em]
 \item Developed software testing suite for embedded bootloader firmware in C/C++ using GoogleTest.
 \item Designed precision testing rig to characterize LiDAR receiver performance under temperature extremes.
 % \item Bridged hardware–software integration, contributing to embedded validation and optical calibration.
 \item Managed documentation and workflow in Confluence, Git, and Jira.
 \end{itemize}
 
+\vspace{0.3em}
+
 \textbf{Electriq Power}\\
 \textit{Blockchain Developer} \hfill Jun 2022 – Nov 2022
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
+\begin{itemize}[leftmargin=1.5em]
 \item Developed EnergyChain, a proof-of-concept enabling peer-to-peer energy trading built on Hyperledger Fabric.
 \item In contribution to the IEEE Blockchain-Enabled Transactive Energy (BCTE) Initiative.
 \item Presented system architecture and results to the IEEE BCTE Forum (Nov 2022).
 \end{itemize}
 
-\textbf{Clean Coalition} – Santa Barbara, CA\\
-\textit{Engineering Intern} \hfill Jun 2021 – Aug 2021
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
-\item Supported energy storage analysis, economic modeling, and solar array layouts for microgrid projects.
-\end{itemize}
+% \vspace{0.3em}
+
+% \textbf{Clean Coalition} – Santa Barbara, CA\\
+% \textit{Engineering Intern} \hfill Jun 2021 – Aug 2021
+% \begin{itemize}[leftmargin=1.5em]
+% \item Supported energy storage analysis, economic modeling, and solar array layouts for microgrid projects.
+% \end{itemize}
+
+\vspace{0.3em}
 
 \textbf{Ocean Beauty Seafoods} – Naknek, AK\\
 \textit{Quality Control Supervisor} \hfill Jun 2020 – Aug 2020
-\begin{itemize}[leftmargin=1em, itemsep=0.5pt]
-\item Oversaw quality control operations at commercial salmon processing facility.
-\item Ensured vendor and intake compliance with quality standards.
+\begin{itemize}[leftmargin=1.5em]
+\item Oversaw vendor and intake compliance within high-volume commercial salmon processing facility.
+% \item Oversaw quality control operations at commercial salmon processing facility.
+% \item Ensured vendor and intake compliance with quality standards.
 \end{itemize}
 
-\noindent\rule{\textwidth}{0.4pt}
+% \noindent\rule{\textwidth}{0.4pt}
 
 
-\vspace{6pt}
-\section*{INVOLVEMENT AND LEADERSHIP}
-% \textbf{Southern California R Users Group Data Hackathon, UCI} \hfill Apr 2024\\
-% Awarded “Best Analysis” for model analyzing demographic and divorce trends from census data.\\[3pt]
-\textbf{Chapman Computer Science Club}\\
-Vice President \hfill Aug 2022–May 2024\\
-\textbf{Chapman Tutoring \& Learning Center}\\
-Computer Science Tutor \hfill Aug–Dec 2022\\
-Provided peer support for data structures, OOP, and math.\\[3pt]
-\textbf{Smart-Contract Research Fellow} \hfill May–Aug 2022\\
-Research on blockchain smart contract viability for real-world applications.
+% \vspace{6pt}
+% \section*{INVOLVEMENT AND LEADERSHIP}
+% % \textbf{Southern California R Users Group Data Hackathon, UCI} \hfill Apr 2024\\
+% % Awarded “Best Analysis” for model analyzing demographic and divorce trends from census data.\\[3pt]
+% \textbf{Chapman Computer Science Club}\\
+% Vice President \hfill Aug 2022–May 2024\\
+% \textbf{Chapman Tutoring \& Learning Center}\\
+% Computer Science Tutor \hfill Aug–Dec 2022\\
+% Provided peer support for data structures, OOP, and math.\\[3pt]
+% \textbf{Smart-Contract Research Fellow} \hfill May–Aug 2022\\
+% Research on blockchain smart contract viability for real-world applications.
 
-\noindent\rule{\textwidth}{0.4pt}
+% \noindent\rule{\textwidth}{0.4pt}
 
-\section*{PRESENTATIONS}
-T. Lewis, J. Kempf. “Energy Chain,” IEEE Blockchain Transactive Energy Initiative, Nov 9, 2022.\\
-% T. Lewis, et al. “COVID-19 Economic Analysis,” Chapman University Student Scholar Symposium, May 2022.
+% \section*{PRESENTATIONS}
+% T. Lewis, J. Kempf. “Energy Chain,” IEEE Blockchain Transactive Energy Initiative, Nov 9, 2022.\\
+% % T. Lewis, et al. “COVID-19 Economic Analysis,” Chapman University Student Scholar Symposium, May 2022.
 
-\noindent\rule{\textwidth}{0.4pt}
+% \noindent\rule{\textwidth}{0.4pt}
 
-\section*{KEY PROJECTS}
-\textbf{One-to-many Bluetooth Audio Broadcaster} \hfill Mar 2025\\
-Utilized Bluetooth LE Broadcast Audio (SIG 5.2) to stream synchronized audio to multiple receivers.\\[3pt]
-\textbf{Solar Microgrid Analysis Processor (SMAP)} \hfill Jan 2024\\
-Suite of tools for analyzing and presenting energy data; deployed to support Clean Coalition microgrid sizing.\\[3pt]
-\textbf{Image Colorization Deep Learning Implementation} \hfill May 2024\\
-Implemented a PyTorch neural network predicting colors from grayscale images.\\[3pt]
-\textbf{EnergyChain} \hfill Oct 2022\\
-Hyperledger Fabric proof of concept for private residential energy exchange; presented to IEEE BCTE.\\[3pt]
-\textbf{Custom FPV Drone} \hfill Apr 2022\\
-Designed CAD frame, 3D printed with carbon fiber, implemented PID control for stabilization.
+% \section*{KEY PROJECTS}
+% \textbf{One-to-many Bluetooth Audio Broadcaster} \hfill Mar 2025\\
+% Utilized Bluetooth LE Broadcast Audio (SIG 5.2) to stream synchronized audio to multiple receivers.\\[3pt]
+% \textbf{Solar Microgrid Analysis Processor (SMAP)} \hfill Jan 2024\\
+% Suite of tools for analyzing and presenting energy data; deployed to support Clean Coalition microgrid sizing.\\[3pt]
+% \textbf{Image Colorization Deep Learning Implementation} \hfill May 2024\\
+% Implemented a PyTorch neural network predicting colors from grayscale images.\\[3pt]
+% \textbf{EnergyChain} \hfill Oct 2022\\
+% Hyperledger Fabric proof of concept for private residential energy exchange; presented to IEEE BCTE.\\[3pt]
+% \textbf{Custom FPV Drone} \hfill Apr 2022\\
+% Designed CAD frame, 3D printed with carbon fiber, implemented PID control for stabilization.
 
 \end{document}

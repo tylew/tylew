@@ -18,9 +18,12 @@ jobs:
 
       - name: Set environment variables
         run: |
-          echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
-          echo "MONTH=$(date +%m)" >> $GITHUB_ENV
-          echo "FILENAME=TylerLewis_resume-${{ env.YEAR }}" >> $GITHUB_ENV
+          YEAR=$(date +%Y)
+          MONTH=$(date +%m)
+          FILENAME="TylerLewis_resume-${YEAR}"
+          echo "YEAR=${YEAR}" >> $GITHUB_ENV
+          echo "MONTH=${MONTH}" >> $GITHUB_ENV
+          echo "FILENAME=${FILENAME}" >> $GITHUB_ENV
 
       - name: Compile resume PDF
         uses: xu-cheng/latex-action@v3

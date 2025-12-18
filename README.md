@@ -13,7 +13,6 @@
 
 </div>
 
-
 ## <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> About Me
 
 Engineer with experience in leading production software development and bridging technical and business domains. Skilled at translating complex goals into practical and effective solutions.
@@ -48,6 +47,12 @@ Engineer with experience in leading production software development and bridging
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 </div>
+
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tylew&theme=github_dark" alt="GitHub Profile Summary"/>
+</div>
+
 
 ## 🚀 GitHub Repos
 

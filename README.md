@@ -35,6 +35,8 @@ Engineer with experience in leading production software development and bridging
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=tylew&theme=github">
+
 ### Frameworks & Tools
 ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -46,13 +48,10 @@ Engineer with experience in leading production software development and bridging
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tylew&theme=github">
+
 </div>
-
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tylew&theme=github_dark" alt="GitHub Profile Summary"/>
-</div>
-
 
 ## 🚀 GitHub Repos
 

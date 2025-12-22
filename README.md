@@ -5,11 +5,14 @@
 ### Software Engineer | Full-Stack Developer | Technology Enthusiast
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Tylew) 
-[![Resume](https://img.shields.io/badge/Resume-Download_PDF-red)](https://github.com/Tylew/tylew/releases/latest/download/TylerLewis_resume-latest.pdf)
 [![Website](https://img.shields.io/badge/Website-100lewis.com-00ADD8)](https://100lewis.com)
 
 
+[![Resume](https://img.shields.io/badge/Resume-Download_PDF-orange)](https://github.com/Tylew/tylew/releases/latest/download/TylerLewis_resume-latest.pdf)
+
+<!--
 [![GitHub Actions](https://github.com/Tylew/tylew/actions/workflows/resume.yml/badge.svg)](https://github.com/Tylew/tylew/actions/workflows/resume.yml)
+-->
 
 </div>
 
@@ -17,12 +20,12 @@
 
 Engineer with experience in leading production software development and bridging technical and business domains. Skilled at translating complex goals into practical and effective solutions.
 
-- Working on full-stack applications and systems engineering
+- Working on AI integrations with full-stack applications 
 - Open to full-time opportunities where I can drive meaningful impact
 - Reach me at: [tylerlewissb@gmail.com](mailto:tylerlewissb@gmail.com)
 
 
-## 🛠️ Tech Stack Experience
+## 🛠️ Tech Stack
 <div align="center">
 
 ### Languages
@@ -53,36 +56,33 @@ Engineer with experience in leading production software development and bridging
 
 </div>
 
-## 🚀 GitHub Repos
+## 🪩 Public work:
 
 ### 📝 [Collaborative Document Editor/Server](https://github.com/tylew/Collaborative-Document-Editor)
-- Built to explore the problem of real-time collaborative editing, Conflict-free Replicated Data Types (CRDTs), and C/C++ language semantics.
-- This project is a complete server + client implementation and allows multiple users to edit a shared document simultaneously without conflicts or data loss.
+- A personal effort to explore collaborative software tactics, C/C++ language semantics, and concepts around Conflict-free Replicated Data Types (CRDTs),.
+- This repository contains a complete server + client implementation which allows multiple users to edit a shared rich text document simultaneously without conflicts or data loss.
 
 
-### ⚡ [EnergyChain - IEEE BCTE](https://github.com/tylew/EnergyChain)
-Blockchain-based energy trading platform presented at IEEE conference
-- Smart contract development
-- Decentralized energy marketplace
-
+### 🌐 [458.100lewis.com](https://458.100lewis.com)
+Portfolio webapp showcasing creative web development skills
+- Modern web development with responsive design
+- Custom visual programming demonstrations
 
 ### 📝 [Solidity Language Guide](https://github.com/tylew/354-Programming-Languages/blob/ed0ebad04aa3c0f0f46881a4d904b28ff7e482f2/report/production_report.pdf)
 Comprehensive analysis of Solidity for blockchain development
 
 
-## 🪩 Misc.
+
+### ⚡ [EnergyChain - IEEE BCTE](https://github.com/tylew/EnergyChain)
+Blockchain-based energy trading platform presented at the IEEE BCTE conference.
+- Developed GoLang smart contracts within the Hyperledger Fabric blockchain ecosystem
+- Established a conceptual product aimed at proving feasibility of a decentralized energy marketplace
+
+
 ### 🚁 [FPV Drone](https://sites.google.com/chapman.edu/the-dci-lab/home/showcase/fall-21-fall-22-showcase-projects?authuser=0#h.qgbxlkmhvkhi)
 Self-designed and fabricated autonomous drone
 - 3D modeling and CAD design
 - Fabricated with PLA and continuous carbon fiber
 - MarkForged X7 3D printing
 - Embedded systems programming
-
-### 🔗 [Safari URL Copy Extension](https://github.com/tylew/URLCopyExtension)
-Safari browser extension for enhanced URL copying workflow
-
-### 🌐 [458.100lewis.com](https://458.100lewis.com)
-Portfolio webapp showcasing creative web development skills
-- Modern web development with responsive design
-- Custom visual programming demonstrations
 

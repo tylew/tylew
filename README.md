@@ -18,11 +18,10 @@
 
 ## <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> About Me
 
-Engineer with experience in leading production software development and bridging technical and business domains. Skilled at translating complex goals into practical and effective solutions.
+Engineer with experience in bridging complex business domains into practical and effective technical solutions.
 
-- Working on AI integrations with full-stack applications 
-- Open to full-time opportunities where I can drive meaningful impact
-- Reach me at: [tylerlewissb@gmail.com](mailto:tylerlewissb@gmail.com)
+- Currently working on developing scalable AI workflows and knowledge augmentation/retrieval for commercial battery & solar proposal and deployment processes.
+- [Reach me by email!](mailto:2b2k74fykj@privaterelay.appleid.com)
 
 
 ## 🛠️ Tech Stack
@@ -55,7 +54,7 @@ Engineer with experience in leading production software development and bridging
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tylew&theme=github">
 
 </div>
-
+<!--
 ## 🪩 Public work:
 
 ### 📝 [Collaborative Document Editor/Server](https://github.com/tylew/Collaborative-Document-Editor)
@@ -86,3 +85,4 @@ Self-designed and fabricated autonomous drone
 - MarkForged X7 3D printing
 - Embedded systems programming
 
+-->

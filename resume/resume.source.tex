@@ -77,25 +77,55 @@ B.S. Computer Science \hfill May 2024\\
 
 
 \section*{PROFESSIONAL EXPERIENCE}
+
+% \textbf{company} – where\\
+% \textit{role} \hfill start – end
+% \begin{itemize}[leftmargin=1.5em]
+% \item 
+% \end{itemize}
+
+\textbf{a✱Titan Inc.} – Remote, USA\\
+\textit{Co-Founder \& CTO} \hfill Sep 2023 – Present
+\begin{itemize}[leftmargin=1.5em]
+\item Lead cloud and backend engineering for a hardware startup building Bluetooth LE Audio (Auracast) broadcast devices for shared, accessible audio (splitR).
+\item Built an internal-operations platform that gives every team member a live, role-specific view of company activity, replacing scattered manual reporting with a single source of truth (GCP; Python/Go/TypeScript).
+\item Automate routine status updates, customer outreach, and marketing content with LLM-based agents, cutting recurring manual work.
+\end{itemize}
+
+\textbf{Voltus} – Remote, USA\\
+\textit{Software Engineer II} \hfill Jun 2026 – Present
+\begin{itemize}[leftmargin=1.5em]
+\item Continue development of the Brightfield battery-development platform (below) following Voltus's June 2026 acquisition, integrating agentic siting and proposal tooling into a leading virtual power plant (VPP) / distributed energy resource (DER) operator.
+\end{itemize}
+
+\textbf{Brightfield AI} – Santa Barbara, CA\\
+\textit{Founding Engineer} \hfill Dec 2025 – Jun 2026
+\begin{itemize}[leftmargin=1.5em]
+\item First engineering hire; partnered with four battery-deployment veteran co-founders to translate domain expertise into an agentic platform that takes a project from a single street address to a fully modeled commercial \& industrial battery storage (BESS) portfolio.
+\item Built the system end-to-end (agentic AI engine, backend and data infrastructure, and product UI): from only an address, it infers the site's load profile, pulls geospatial data via public APIs (property boundaries, parcels), auto-places batteries, and locates on-site interconnection points to complete an initial project vetting in minutes.
+\item Let users refine the auto-generated proposal with additional inputs, cutting soft costs and compressing the time from first customer conversation to a deployable proposal; acquired by Voltus in June 2026.
+\end{itemize}
+
+
 \textbf{Hansji Hospitality Ventures} – Irvine, CA\\
-\textit{Lead Software Engineer} \hfill May 2024 – Present
+\textit{Lead Software Engineer} \hfill May 2024 – Dec 2025
 \begin{itemize}[leftmargin=1.5em]
 \item Own design, provisioning, and lifecycle management of all cloud infrastructure (Terraform IaC, IAM roles/groups, security policies) on Google Cloud Platform for a management platform across 6 hotels with ~\$30M ARR.
-\item Architect distributed backend systems in Python (FastAPI) and Go using asynchronous task queues, Pub/Sub, and event-driven microservices with data-governance guarantees.
-\item Implement dual-layer access control: cloud-resource authorization and internal permission engine enforcing role and scope-based checks on both client and server across all systems and resources.
-\item Deliver observability across services (logging, metrics, alerting) enabling rapid fault isolation.
+\item Architect the event-driven backend behind every product, async microservices in Python (FastAPI) and Go that process operational data reliably across hotels.
+\item Built the authorization layer securing all products: a role- and scope-based permission engine enforcing consistent access control across client, server, and cloud resources.
+% \item Deliver observability across services (logging, metrics, alerting) enabling rapid fault isolation.
 \item Build secure SSR-first Next.js interfaces with clear UX flows and minimal client-side attack surface.
 \item Integrate legacy XML APIs with modern data pipelines (Apache Beam $\rightarrow$ SQL + Document DBs) for real-time revenue, labor, and organizational intelligence.
-\item Produce comprehensive documentation of system design and developer workflows.
+% \item Produce comprehensive documentation of system design and developer workflows.
 \end{itemize}
 
 % \vspace{-0.3em}
 \textit{Selected Systems Overview}
 \begin{itemize}[leftmargin=1.5em]
 \item \textbf{Revenue Management}: Real-time On-the-Books (OTB) data ingest; pricing and demand insights; ML-based recommendation engine; vector-search event correlation; executive revenue forecasting.
-\item \textbf{Labor Oversight}: Overtime anomaly detection; occupancy-driven staffing alerts.
+% \item \textbf{Labor Oversight}: Overtime anomaly detection; occupancy-driven staffing alerts.
 \item \textbf{Credit Card Reconciliation}: Direct bank account integration with Plaid; employee receipt capture workflows; accounting exports and discrepancy resolution.
-\item \textbf{Notification Suite}: Configurable email/Slack/SMS delivery; automated operational reporting.
+% \item \textbf{Notification Suite}: Configurable email/Slack/SMS delivery; automated operational reporting.
 \item \textbf{Identity \& Access Management}: Full-stack authorization framework backing all products.
 \end{itemize}
 
@@ -104,9 +134,8 @@ B.S. Computer Science \hfill May 2024\\
 \textbf{Clean Coalition} – Santa Barbara, CA\\
 \textit{Backend and Algorithm Engineer (Remote)} \hfill Jan 2024 – Aug 2024
 \begin{itemize}[leftmargin=1.5em]
-\item Developed a cloud-based platform standardizing microgrid evaluation and proposal workflows.
-\item Engineered data models and simulations for electrical flow, energy storage, and time-of-use analysis to support microgrid project proposals and development.
-\item Supervised and mentored a junior developer; ensured maintainable and quality code.
+\item Built a cloud platform standardizing microgrid evaluation and proposal workflows, with simulations for electrical flow, energy storage, and time-of-use analysis.
+\item Supervised and mentored a junior developer, ensuring maintainable, quality code.
 \end{itemize}
 
 \vspace{0.3em}
@@ -114,10 +143,7 @@ B.S. Computer Science \hfill May 2024\\
 \textbf{Continental Automotive} – Carpinteria, CA\\
 \textit{LiDAR Software Engineering Intern} \hfill May 2023 – Dec 2024
 \begin{itemize}[leftmargin=1.5em]
-\item Developed software testing suite for embedded bootloader firmware in C/C++ using GoogleTest.
-\item Designed precision testing rig to characterize LiDAR receiver performance under temperature extremes.
-% \item Bridged hardware–software integration, contributing to embedded validation and optical calibration.
-\item Managed documentation and workflow in Confluence, Git, and Jira.
+\item Built a C/C++ GoogleTest suite for embedded bootloader firmware and designed a precision rig to characterize LiDAR receiver performance under temperature extremes.
 \end{itemize}
 
 \vspace{0.3em}
@@ -125,9 +151,7 @@ B.S. Computer Science \hfill May 2024\\
 \textbf{Electriq Power}\\
 \textit{Blockchain Developer} \hfill Jun 2022 – Nov 2022
 \begin{itemize}[leftmargin=1.5em]
-\item Developed EnergyChain, a proof-of-concept enabling peer-to-peer energy trading built on Hyperledger Fabric.
-\item In contribution to the IEEE Blockchain-Enabled Transactive Energy (BCTE) Initiative.
-\item Presented system architecture and results to the IEEE BCTE Forum (Nov 2022).
+\item Developed EnergyChain, a Hyperledger Fabric proof-of-concept for peer-to-peer energy trading; presented architecture and results to the IEEE Blockchain-Enabled Transactive Energy (BCTE) Forum (Nov 2022).
 \end{itemize}
 
 % \vspace{0.3em}

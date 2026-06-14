@@ -20,7 +20,8 @@
 
 Engineer with experience in bridging complex business domains into practical and effective technical solutions.
 
-- Currently working on developing scalable AI workflows and knowledge augmentation/retrieval for commercial battery & solar proposal and deployment processes.
+- **Software Engineer @ [Voltus](https://www.voltus.co)** — building agentic AI workflows that take commercial & industrial battery storage projects from a street address to a fully modeled deployment proposal in minutes (via the [Brightfield](https://www.latitudemedia.com/news/voltus-is-acquiring-energy-storage-startup-brightfield-ai/) acquisition, June 2026).
+- **Co-Founder & CTO @ a✱Titan** — leading cloud/backend for shared, accessible audio (splitR) and an agentic internal-operations platform.
 - [Reach me by email!](mailto:2b2k74fykj@privaterelay.appleid.com)
 
 

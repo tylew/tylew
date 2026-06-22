@@ -6,6 +6,8 @@
 \usepackage{titlesec}
 \usepackage{setspace}
 \usepackage{helvet}
+\usepackage{fontspec}
+\newfontfamily\symbolfont{DejaVu Sans}
 \usepackage{multicol}
 \setlength{\multicolsep}{2pt}
 % \renewcommand{\familydefault}{\sfdefault}
@@ -26,9 +28,11 @@
 
 \begin{center}
 \textbf{\Large Tyler Lewis}\\[4pt]
-\href{mailto:tylerlewissb@gmail.com}{tylerlewissb@gmail.com} • \href{https://linkedin.com/in/tylew/}{linkedin.com/in/tylew/} • \href{https://github.com/tylew}{github.com/tylew}\\[3pt]
+\href{mailto:tylerlewissb@gmail.com}{tylerlewissb@gmail.com} • \href{https://linkedin.com/in/tylew/}{linkedin.com/in/tylew/} • \href{https://github.com/tylew}{github.com/tylew} • \href{https://100lewis.com}{100lewis.com}\\[3pt]
 % Early career engineer with broad and deep experience in production software development. Skilled at translating business goals into effective technical solutions. Seeking a full-time position in a collaborative environment where my skills have the opportunity to drive meaningful impact.
-Full-stack and cloud infrastructure engineer with direct experience in ownership of end-to-end production systems serving real operational use. Proven ability to deliver quickly and expand scope while maintaining a high standard of execution. Seeking a full-time position in a collaborative environment.
+% Full-stack and cloud infrastructure 
+Software \& product engineer with direct experience in ownership of end-to-end production systems. % serving real operational use. 
+% Proven ability to deliver quickly and expand scope while maintaining a high standard of execution. Seeking a full-time position in a collaborative environment.
 \end{center}\vspace{-\baselineskip}
 
 \noindent\rule{\textwidth}{0.4pt}
@@ -59,21 +63,21 @@ B.S. Computer Science \hfill May 2024\\
 
 % \noindent\rule{\textwidth}{0.4pt}
 
-\section*{SKILLS}
-\begin{multicols}{3}
-  \begin{itemize}[leftmargin=*]
-    \setlength{\itemsep}{0pt}
-    \setlength{\parskip}{0pt}
-    \setlength{\parsep}{0pt}
-    \item Python/Go/TypeScript/C/++
-    \item Infrastructure as Code \\ (Terraform)
-    \item Containerized microservices
-    \item Distributed systems \\and async messaging
-    \item SQL / NoSQL data modeling
-    \item Observability: \\metrics, logs, alerting
-  \end{itemize}
-\end{multicols}
-\noindent\rule{\textwidth}{0.4pt}
+% \section*{SKILLS}
+% \begin{multicols}{3}
+%   \begin{itemize}[leftmargin=*]
+%     \setlength{\itemsep}{0pt}
+%     \setlength{\parskip}{0pt}
+%     \setlength{\parsep}{0pt}
+%     \item Python/Go/TypeScript/C/++
+%     \item Infrastructure as Code \\ (Terraform)
+%     \item Containerized microservices
+%     \item Distributed systems \\and async messaging
+%     \item SQL / NoSQL data modeling
+%     \item Observability: \\metrics, logs, alerting
+%   \end{itemize}
+% \end{multicols}
+% \noindent\rule{\textwidth}{0.4pt}
 
 
 \section*{PROFESSIONAL EXPERIENCE}
@@ -84,12 +88,11 @@ B.S. Computer Science \hfill May 2024\\
 % \item 
 % \end{itemize}
 
-\textbf{a✱Titan Inc.} – Remote, USA\\
+\textbf{a{\symbolfont ✱}Titan Inc.} – Remote, USA\\
 \textit{Co-Founder \& CTO} \hfill Sep 2023 – Present
 \begin{itemize}[leftmargin=1.5em]
-\item Lead cloud and backend engineering for a hardware startup building Bluetooth LE Audio (Auracast) broadcast devices for shared, accessible audio (splitR).
-\item Built an internal-operations platform that gives every team member a live, role-specific view of company activity, replacing scattered manual reporting with a single source of truth (GCP; Python/Go/TypeScript).
-\item Automate routine status updates, customer outreach, and marketing content with LLM-based agents, cutting recurring manual work.
+\item Lead engineering for a hardware startup building Auracast (Bluetooth LE Audio) broadcast devices for shared, accessible audio (splitR).
+\item Built internal agentic operations platform that gives every team member a role-specific view of activity, automate routine status updates, orchestrate customer outreach, and generation of marketing content, cutting recurring manual work.
 \end{itemize}
 
 \textbf{Voltus} – Remote, USA\\
@@ -101,8 +104,8 @@ B.S. Computer Science \hfill May 2024\\
 \textbf{Brightfield AI} – Santa Barbara, CA\\
 \textit{Founding Engineer} \hfill Dec 2025 – Jun 2026
 \begin{itemize}[leftmargin=1.5em]
-\item First engineering hire; partnered with four battery-deployment veteran co-founders to translate domain expertise into an agentic platform that takes a project from a single street address to a fully modeled commercial \& industrial battery storage (BESS) portfolio.
-\item Built the system end-to-end (agentic AI engine, backend and data infrastructure, and product UI): from only an address, it infers the site's load profile, pulls geospatial data via public APIs (property boundaries, parcels), auto-places batteries, and locates on-site interconnection points to complete an initial project vetting in minutes.
+\item First engineering hire; partnered with four battery-deployment veteran co-founders to translate domain expertise into an agentic platform that takes a single street address to a fully modeled commercial \& industrial battery storage (BESS) portfolio.
+\item Built the system end-to-end (agentic AI engine, backend and data infrastructure, and product UI): from only an address, it infers the site's load profile, pulls geospatial data via public APIs, auto-places batteries, and locates on-site interconnection points to complete an initial project vetting in minutes.
 \item Let users refine the auto-generated proposal with additional inputs, cutting soft costs and compressing the time from first customer conversation to a deployable proposal; acquired by Voltus in June 2026.
 \end{itemize}
 
@@ -111,28 +114,28 @@ B.S. Computer Science \hfill May 2024\\
 \textit{Lead Software Engineer} \hfill May 2024 – Dec 2025
 \begin{itemize}[leftmargin=1.5em]
 \item Own design, provisioning, and lifecycle management of all cloud infrastructure (Terraform IaC, IAM roles/groups, security policies) on Google Cloud Platform for a management platform across 6 hotels with ~\$30M ARR.
-\item Architect the event-driven backend behind every product, async microservices in Python (FastAPI) and Go that process operational data reliably across hotels.
-\item Built the authorization layer securing all products: a role- and scope-based permission engine enforcing consistent access control across client, server, and cloud resources.
-% \item Deliver observability across services (logging, metrics, alerting) enabling rapid fault isolation.
-\item Build secure SSR-first Next.js interfaces with clear UX flows and minimal client-side attack surface.
-\item Integrate legacy XML APIs with modern data pipelines (Apache Beam $\rightarrow$ SQL + Document DBs) for real-time revenue, labor, and organizational intelligence.
+% \item Architect the event-driven backend behind every product, async microservices in Python (FastAPI) and Go that process operational data reliably across hotels.
+% \item Built the authorization layer securing all products: a role- and scope-based permission engine enforcing consistent access control across client, server, and cloud resources.
+% % \item Deliver observability across services (logging, metrics, alerting) enabling rapid fault isolation.
+% \item Build secure SSR-first Next.js interfaces with clear UX flows and minimal client-side attack surface.
+% \item Integrate legacy XML APIs with modern data pipelines (Apache Beam $\rightarrow$ SQL + Document DBs) for real-time revenue, labor, and organizational intelligence.
 % \item Produce comprehensive documentation of system design and developer workflows.
 \end{itemize}
 
 % \vspace{-0.3em}
-\textit{Selected Systems Overview}
+\textit{Selected Systems}
 \begin{itemize}[leftmargin=1.5em]
 \item \textbf{Revenue Management}: Real-time On-the-Books (OTB) data ingest; pricing and demand insights; ML-based recommendation engine; vector-search event correlation; executive revenue forecasting.
 % \item \textbf{Labor Oversight}: Overtime anomaly detection; occupancy-driven staffing alerts.
 \item \textbf{Credit Card Reconciliation}: Direct bank account integration with Plaid; employee receipt capture workflows; accounting exports and discrepancy resolution.
 % \item \textbf{Notification Suite}: Configurable email/Slack/SMS delivery; automated operational reporting.
-\item \textbf{Identity \& Access Management}: Full-stack authorization framework backing all products.
+\item \textbf{Identity \& Access Management}: Full-stack custom authorization framework backing all products.
 \end{itemize}
 
 \vspace{0.3em}
 
 \textbf{Clean Coalition} – Santa Barbara, CA\\
-\textit{Backend and Algorithm Engineer (Remote)} \hfill Jan 2024 – Aug 2024
+\textit{Backend and Battery Dispatch Modeling Engineer (Remote)} \hfill Jan 2024 – Aug 2024
 \begin{itemize}[leftmargin=1.5em]
 \item Built a cloud platform standardizing microgrid evaluation and proposal workflows, with simulations for electrical flow, energy storage, and time-of-use analysis.
 \item Supervised and mentored a junior developer, ensuring maintainable, quality code.
@@ -151,7 +154,7 @@ B.S. Computer Science \hfill May 2024\\
 \textbf{Electriq Power}\\
 \textit{Blockchain Developer} \hfill Jun 2022 – Nov 2022
 \begin{itemize}[leftmargin=1.5em]
-\item Developed EnergyChain, a Hyperledger Fabric proof-of-concept for peer-to-peer energy trading; presented architecture and results to the IEEE Blockchain-Enabled Transactive Energy (BCTE) Forum (Nov 2022).
+\item Developed EnergyChain, a blockchain-based peer-to-peer energy trading concept; presented technical architecture and results to the IEEE Blockchain-Enabled Transactive Energy Forum Nov 2022.
 \end{itemize}
 
 % \vspace{0.3em}
@@ -171,6 +174,13 @@ B.S. Computer Science \hfill May 2024\\
 % \item Oversaw quality control operations at commercial salmon processing facility.
 % \item Ensured vendor and intake compliance with quality standards.
 \end{itemize}
+
+% \vspace{0.3em}
+% \textbf{"Spencer Inc."} – Santa Barbara, CA\\
+% \textit{Quality Control Supervisor} \hfill Jun 2020 – Aug 2020
+% \begin{itemize}[leftmargin=1.5em]
+% \item Personal assistant for a busy individual providing IT support as well as other odd jobs.
+% \end{itemize}
 
 % \noindent\rule{\textwidth}{0.4pt}
 

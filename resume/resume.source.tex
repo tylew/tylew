@@ -88,17 +88,20 @@ B.S. Computer Science \hfill May 2024\\
 % \item 
 % \end{itemize}
 
-\textbf{a{\symbolfont ✱}Titan Inc.} – Remote, USA\\
-\textit{Co-Founder \& CTO} \hfill Sep 2023 – Present
-\begin{itemize}[leftmargin=1.5em]
-\item Lead engineering for a hardware startup building Auracast (Bluetooth LE Audio) broadcast devices for shared, accessible audio (splitR).
-\item Built internal agentic operations platform that gives every team member a role-specific view of activity, automate routine status updates, orchestrate customer outreach, and generation of marketing content, cutting recurring manual work.
-\end{itemize}
-
 \textbf{Voltus} – Remote, USA\\
 \textit{Software Engineer II} \hfill Jun 2026 – Present
 \begin{itemize}[leftmargin=1.5em]
-\item Continue development of the Brightfield battery-development platform (below) following Voltus's June 2026 acquisition, integrating agentic siting and proposal tooling into a leading virtual power plant (VPP) / distributed energy resource (DER) operator.
+\item Own the Brightfield battery-development platform (below) within Voltus's virtual power plant (VPP) / distributed energy resource (DER) stack, converting a street address into a fully modeled BESS deployment proposal.
+\item Ship battery dispatch and financial modeling: dispatch and state-of-charge schedule export, throughput and cycle reporting, pro-forma cash-flow / NPV / simple-payback tooltips, ITC and post-ITC incentive resolution, and tariff, tolling, and BYOC contract pricing.
+\item Design the proposal-run snapshot architecture: runs read inputs from an immutable per-run snapshot rather than a shared site draft, with in-progress and frozen gates so concurrent edits and re-runs cannot clobber unread changes; roll out new battery durations and role grants behind LaunchDarkly flags.
+\item Harden modeling-pipeline correctness: enforce a single UTC+0 clock, reconcile price feeds against their registered year, and clean seed and Alembic migration drift.
+\end{itemize}
+
+\textbf{a{\symbolfont ✱}Titan Inc.} – Remote, USA\\
+\textit{Founding Engineer} \hfill Sep 2023 – Present
+\begin{itemize}[leftmargin=1.5em]
+\item Lead engineering for a hardware startup building Auracast (Bluetooth LE Audio) broadcast devices for shared, accessible audio (splitR).
+\item Built an internal agentic operations platform giving every team member a role-specific view of activity, automating routine status updates, orchestrating customer outreach, and generating marketing content — cutting recurring manual work.
 \end{itemize}
 
 \textbf{Brightfield AI} – Santa Barbara, CA\\

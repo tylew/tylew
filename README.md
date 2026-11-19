@@ -13,7 +13,7 @@ _School taught you how to make -- but it never taught you how to build._
 
 - **Software Engineer @ [Voltus](https://www.voltus.co)** — building agentic AI workflows to fast track Giggawatt-scale commercial & industrial distributed energy storage projects from contract to deployed assets, powering hyperscalers with Voltus' Bring Your Own Capacity
   - Prev. [Brightfield AI](https://www.latitudemedia.com/news/voltus-is-acquiring-energy-storage-startup-brightfield-ai/) acquired by Voltus June 2026.
-- **Co-Founder & CTO @ a✱Titan** — leading cloud/backend for shared, accessible audio (splitR) and an agentic internal-operations platform.
+- **Co-Founder & CTO @ a✱Titan** — Harnessing the newest capabilities in wireless communications and AI.
 
 
 <!--

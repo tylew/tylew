@@ -1,60 +1,21 @@
 <div align="center">
 
-# Tyler Lewis
+# <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> Tyler Lewis
 
-### Software Engineer | Full-Stack Developer | Technology Enthusiast
+_School taught you how to make -- but it never taught you how to build._
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Tylew) 
-[![Website](https://img.shields.io/badge/Website-100lewis.com-00ADD8)](https://100lewis.com)
-
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Tylew) |
+[![Website](https://img.shields.io/badge/Website-100lewis.com-e6f542)](https://100lewis.com) |
+[![Email me](https://img.shields.io/badge/Email-tyler@pl4m.com-ce42f5)](mailto:tyler@pl4m.com) |
 [![Resume](https://img.shields.io/badge/Resume-Download_PDF-orange)](https://github.com/Tylew/tylew/releases/latest/download/TylerLewis_resume-latest.pdf)
 
-<!--
-[![GitHub Actions](https://github.com/Tylew/tylew/actions/workflows/resume.yml/badge.svg)](https://github.com/Tylew/tylew/actions/workflows/resume.yml)
--->
-
 </div>
 
-## <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/> About Me
-
-Engineer with experience in bridging complex business domains into practical and effective technical solutions.
-
-- **Software Engineer @ [Voltus](https://www.voltus.co)** — building agentic AI workflows that take commercial & industrial battery storage projects from a street address to a fully modeled deployment proposal in minutes (via the [Brightfield](https://www.latitudemedia.com/news/voltus-is-acquiring-energy-storage-startup-brightfield-ai/) acquisition, June 2026).
+- **Software Engineer @ [Voltus](https://www.voltus.co)** — building agentic AI workflows to fast track Giggawatt-scale commercial & industrial distributed energy storage projects from contract to deployed assets, powering hyperscalers with Voltus' Bring Your Own Capacity
+  - Prev. [Brightfield AI](https://www.latitudemedia.com/news/voltus-is-acquiring-energy-storage-startup-brightfield-ai/) acquired by Voltus June 2026.
 - **Co-Founder & CTO @ a✱Titan** — leading cloud/backend for shared, accessible audio (splitR) and an agentic internal-operations platform.
-- [Reach me by email!](mailto:2b2k74fykj@privaterelay.appleid.com)
 
 
-## 🛠️ Tech Stack
-<div align="center">
-
-### Languages
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=tylew&theme=github">
-
-### Frameworks & Tools
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tylew&theme=github">
-
-</div>
 <!--
 ## 🪩 Public work:
 
